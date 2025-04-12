@@ -1,11 +1,13 @@
 #### Dokumentacja testów:
 - `testy.md`
 - `format.md`
+- `ma_gen.cpp`: kod źródłowy generatorki
 
 #### Jak użyć?
 Zklonować/rozpakować do osobnego folderu tam, gdzie mamy chociażby `ma.c`, tzn. rozpakowane pliki
 muszą widzieć `../ma.h`, `../libma.so` i `../memory_test.h`.
-Zbudować swoją libkę i w folderze z plikami testerki wywołać:
+Oczywiście warto przed odpaleniem poniższych komend przecztytać `makefile`.
+Po zbudowaniu swojej libki, w folderze z plikami testerki należy wywołać:
 ```sh
 make run
 ```

@@ -21,7 +21,7 @@ endif
 
 all: run run_duzo
 
-ma_test: ma_test.o
+ma_test: ma_test.o ../libma.so
 	g++ -L.. -lma ma_test.o -o $@ $(CXXFLAGS) 
 
 ma_gen: ma_gen.o
