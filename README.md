@@ -1,4 +1,4 @@
-### Ostatnia poprawka testów: sobota, 22:07 (mało, średnio), 22:32 (dużo)
+### Ostatnia poprawka testów: sobota, 22:07-22:32
 
 #### Dokumentacja testów:
 - `testy.md`
