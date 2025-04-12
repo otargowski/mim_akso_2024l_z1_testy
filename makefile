@@ -31,9 +31,6 @@ ma_gen: ma_gen.o
 ma_gen.o: ma_gen.cpp
 ma_test.o: ma_test.cpp ../ma.h ../memory_tests.h
 
-duzo.in.zst:
-	curl -LO https://otsrv.net/pixl/$@
-
 %.zst:
 	curl -LO https://students.mimuw.edu.pl/~ot469694/akso/z1/$@
 

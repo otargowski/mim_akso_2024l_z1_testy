@@ -1,3 +1,5 @@
+### Ostatnia poprawka testów: sobota, 22:07 (mało, średnio), 22:32 (dużo)
+
 #### Dokumentacja testów:
 - `testy.md`
 - `format.md`
@@ -16,4 +18,4 @@ Dla odważnych jest też:
 make run_duzo
 ```
 
-Do czyszczenia folderu służą cele `clean` i `clean_fr_fr` (usuwa też zkompresowane in'y i out'y).
+Do czyszczenia folderu służą cele `clean` i `clean_fr_fr` (usuwa też zkompresowane in'y i out'y). **Tej drugiej komendy należy użyć w przypadku poprawek testów**.
