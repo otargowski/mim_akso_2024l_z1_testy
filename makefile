@@ -4,7 +4,6 @@
 
 BUILD_TYPE ?= release
 CC = gcc
-SH = sh
 # -O2 is added if BUILD_TYPE isn't set to debug.
 CXXFLAGS = -Wall -Wextra -Wno-implicit-fallthrough -std=c++20 -fPIC
 CLANG_FORMAT_STYLE = {BasedOnStyle: Microsoft, ColumnLimit: 80, \
@@ -52,7 +51,7 @@ run: ma_test fetch
 
 run_duzo: ma_test fetch_duzo
 	LD_LIBRARY_PATH="$$LD_LIBRARY_PATH:.." ./ma_test < duzo.in > duzo.out.new
-	diff duzo.out duzo.out.new
+	cmp duzo.out duzo.out.new
 
 format:
 	clang-format -i --style="$(CLANG_FORMAT_STYLE)" *.cpp
