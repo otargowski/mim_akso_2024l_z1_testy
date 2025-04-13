@@ -71,7 +71,8 @@ void outfun(uint64_t *output, uint64_t const *state, size_t m, size_t s) {
 
 void transfun(uint64_t *next_state, uint64_t const *input,
               uint64_t const *state, size_t n, size_t s) {
-    assert(next_state != NULL && input != NULL && state != NULL && s > 0);
+    assert(next_state != NULL && (input != NULL || n == 0) && state != NULL &&
+           s > 0);
     for (size_t i = 0; i < (s + BLOK - 1) / BLOK; ++i)
         next_state[i] = state[i] ^ prztab[n][s][i];
     n = (n + BLOK - 1) / BLOK;
