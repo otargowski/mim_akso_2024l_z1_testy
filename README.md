@@ -8,7 +8,7 @@
 #### Jak użyć?
 1. Mieć zainstalowane narzędzie `zstd` do (de)kompresji.
 2. Zklonować/rozpakować do osobnego folderu __**poniżej**__ testowanego `ma.c`.
-**Rozpakowane pliki muszą widzieć `../ma.h`, `../libma.so` oraz `../memory_test.h`.**
+**Rozpakowane pliki muszą widzieć `../ma.h`, `../libma.so` oraz `../memory_tests.h`.**
 3. Zbudować swoją libkę.
 4. Przecztytać `makefile` (opcjonalne, ale zalecane).
 5. Wywołać
