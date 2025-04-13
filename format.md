@@ -4,7 +4,7 @@ Format wejścia:
 - Każda następna linia to odrębna operacja.
   Typ operacji definiuje pierwsze (jednoliterowe) słowo w linii.
   Każda powinna wypisać dokładnie jedną linię (łatwiej przeglądać wyjście).
-- "Q ind": należy wypisać ciąg binarny (jako znaki '0'/'1')
+- "O ind": należy wypisać ciąg binarny (jako znaki '0'/'1')
   stanowiący wyjście automatu o numerze ind,
   ~~a jeżeli takowy nie istnieje to -1.~~ (chyba niepotrzebne)
 - "c n m s CIĄG": należy stworzyć automat zwykły
