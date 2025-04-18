@@ -1,6 +1,5 @@
 .PHONY: clean clean_fr_fr all format run run_duzo fetch fetch_duzo
-# (GNU?) make moment (maybe add `.CLOWN: make`?)
-.PRECIOUS: %.zst
+.NOTINTERMEDIATE: %.zst
 
 BUILD_TYPE ?= release
 CC = gcc
