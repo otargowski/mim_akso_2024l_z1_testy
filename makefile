@@ -30,7 +30,7 @@ ma_gen.o: ma_gen.cpp
 ma_test.o: ma_test.cpp ../ma.h ../memory_tests.h
 
 %.zst:
-	curl -LO https://students.mimuw.edu.pl/~ot469694/akso/z1/$@
+	curl -LO https://golem.otsrv.net/uw/akso/z1/$@
 
 %.in: %.in.zst
 	zstd -d -T0 $@.zst
